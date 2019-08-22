@@ -1,0 +1,616 @@
+/*Style Sheet for Taylors fun fair*/
+
+
+/* ***************************************************************************************************************************************
+
+                                                          All PAGES 
+
+**************************************************************************************************************************************** */
+
+html body 
+{
+	width: 100%;
+	height: 1600px;
+}
+
+*
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'Kalam', cursive;
+}
+.footer_div
+{
+	text-decoration: none;
+	text-align: center;
+	width: 100%;
+	height: 110px;
+	background-color: #0005;
+	line-height: 80px;
+	position: absolute;
+	top: 1600px;
+}
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * nav bar * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+#main
+{
+	width: 100%;
+	height: 100vh;
+	background-image: url(1.jpg);
+	background-size: cover;
+}
+
+nav
+{
+	width: 100%;
+	height: 80px;
+	background-color: #0005;
+	line-height: 80px;
+}
+
+		
+
+nav ul li
+{
+	list-style-type: none;
+	display: inline-block;
+	transition: 0.8s all;
+}
+
+nav ul li:hover
+{
+	text-decoration: underline;
+}
+
+nav ul li a
+{
+	text-decoration: none;
+	font-size: 25px;
+	color: #FFF;
+	padding: 20px 70.1px 20px 70.1px;
+}
+
+.active
+{
+	background-color: #00b3e8;
+	text-decoration: underline;
+}
+/* ***************************************************************************************************************************************
+
+                                                          INDEX PAGE 
+
+**************************************************************************************************************************************** */
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * image carousel * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+#slider{
+	z-index: 1;
+	position: absolute;
+	top: 365px;
+	width: 100%;
+	height: 600px;
+	background-image: url(images/tester/1.jpg);
+	background-size: cover;
+	margin: 100px auto;
+	animation: slide 25s infinite;
+	}
+
+@keyframes slide{
+	25%{
+	background-image: url(images/tester/2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	}
+	50%{
+	background-image: url(images/tester/3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	}
+	75%{
+	background-image: url(images/tester/4.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	}
+	100%{
+	background-image: url(images/tester/1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	}
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * backgound cover image * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.background_cover{
+	width: 1335px;
+	height:;
+	background-size: cover;
+	position: absolute;
+	top: 1065px;
+	opacity: 0.3;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * cookies bar * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+		#cookie_button
+		{
+	  		width: 50px;
+	  		height: 20px;
+	  		background: #ccc;
+	  		color: #333;
+	  		text-decoration: none;
+	  		padding: 5px 10px;
+	  		border-radius: 3px;
+	  		display: inline-block;
+	  		border: 1px solid #aaa;
+	  		border-bottom: 2px solid #aaa;
+	  		position: relative;
+	  		bottom: 16px;
+	  		left: 895px;
+	  		text-align: center;
+		}
+
+		#OK
+		{
+			position: relative;
+			bottom: 2px;
+		}
+
+		#cookie_button:hover 
+		{
+			cursor: pointer;
+		}
+
+		.cookie_banner a 
+		{
+			color: slategrey;
+		}
+
+		.cookie_banner p 
+		{
+			color: white;
+		}
+
+		.cookie_banner 
+		{
+			font: 18px Arial;
+			background: #333;
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			z-index: 10;
+		}
+
+		.cookie_banner .cookie_box 
+		{
+			margin: 0 auto;
+			width: 70%;
+			color: #f0f0f0;
+			padding: 15px;
+		}
+
+		#cookie_para
+		{
+			position: relative;
+			top: 15px;
+			right: 50px;
+		}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * 3 center divs  * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+#index_grid
+	{
+		position: absolute;
+		top: 1050px;
+		left: 105px;
+		width: 800px;
+		display: grid;
+		grid-template-columns: 350px 350px 350px;
+		grid-template-rows: 480px;
+		grid-gap: 50px;
+		grid-template-areas: 
+		" index_img_I index_img_II index_img_III ";
+	}
+
+	#index_img_I
+	{
+		z-index: 3;
+		grid-area: index_img_I;
+		border: 1px solid red;
+		background-color: #6dd7e3;
+		border-radius: 15px;
+		box-shadow: -10px 10px 10px 10px darkgrey;
+	}
+
+	#index_img_I:hover
+	{
+		transform: scale(1.15);
+		transition: .25s ease;
+	}
+
+	#index_img_I h4
+	{
+		opacity: 0;
+		position: relative;
+		top: 245px;
+		text-align: center;
+		z-index: 6;
+	}
+
+	#index_img_I:hover h4
+	{
+		opacity: 1;
+		transition: .75s ease;
+	}
+
+	#index_img_II
+	{
+		z-index: 3;
+		grid-area: index_img_II;
+		border: 1px solid red;
+		background-color: #6dd7e3;
+		border-radius: 15px;
+		box-shadow: -10px 10px 10px 10px darkgrey;
+	}
+
+	#index_img_II:hover
+	{
+		transform: scale(1.15);
+		transition: .25s ease;
+	}
+
+	#index_img_II h4
+	{
+		opacity: 0;
+		position: relative;
+		top: 245px;
+		text-align: center;
+		z-index: 6;
+	}
+
+	#index_img_II:hover h4
+	{
+		opacity: 1;
+		transition: .75s ease;
+	}
+
+	#index_img_III
+	{
+		z-index: 3;
+		grid-area: index_img_III;
+		border: 1px solid red;
+		background-color: #6dd7e3;
+		border-radius: 15px;
+		box-shadow: 10px 10px 10px 10px darkgrey;
+	}
+
+	#index_img_III:hover
+	{
+		transform: scale(1.15);
+		transition: .25s ease;
+	}
+
+	#index_img_III h4
+	{
+		opacity: 0;
+		position: relative;
+		top: 245px;
+		text-align: center;
+		z-index: 6;
+	}
+
+	#index_img_III:hover h4
+	{
+		opacity: 1;
+		transition: .75s ease;
+	}
+
+	#index_img_pos_I
+	{
+		z-index: 5;
+		position: relative; 
+		top: 25px; 
+		left: 25px;
+		width: 300px;
+		height: 157px;
+		background-image: url("images/tester/box_img_tester_I.jpg");
+		background-repeat: no-repeat;
+	}
+
+	#index_img_pos_II
+	{
+		position: relative; 
+		top: 25px; 
+		left: 25px;
+		width: 300px;
+		height: 157px;
+		background-image: url("images/tester/box_img_tester_II.jpg");
+		background-repeat: no-repeat;
+	}
+
+	#index_img_pos_III
+	{
+		position: relative; 
+		top: 25px; 
+		left: 25px;
+		width: 300px;
+		height: 157px;
+		background-image: url("images/tester/box_img_tester_III.jpg");
+		background-repeat: no-repeat;
+	}
+
+	#index_title_I
+	{
+		position: relative;
+		bottom: -40px;
+		text-align: center;
+	}
+
+	#index_title_II
+	{
+		position: relative;
+		bottom: -40px;
+		text-align: center;
+	}
+
+	#index_title_III
+	{
+		position: relative;
+		bottom: -40px;
+		text-align: center;
+	}
+
+	.index_para
+	{
+		width: 320px;
+		position: relative;
+		bottom: -40px;
+		text-align: justify;
+		margin: 10px;
+	}
+
+	#index_small
+	{
+		position: absolute; 
+		left: 600px; 
+		width: auto; 
+		top: 1670px;
+	}
+
+	#index_footer
+	{
+		position: absolute;
+		top: 1600px;
+	}
+
+
+
+
+
+/* ***************************************************************************************************************************************
+
+                                                          ATTRACTIONS PAGE 
+
+**************************************************************************************************************************************** */
+
+
+/* ***************************************************************************************************************************************
+
+                                                          EVENTS PAGE 
+
+**************************************************************************************************************************************** */
+
+/* *********************************************** table and center ************************************* */
+
+main
+		{
+			position: absolute;
+			top: 1065px;
+			width: 100%;
+			height: 663px;
+/*			border: 1px solid red;
+*/
+			background: radial-gradient(#b2d9eb, #cbe9f7, #fff);	
+		}
+
+		table 
+		{
+			font-family: 'News Cycle', sans-serif;
+			font-size: 20px;
+			border-collapse: collapse;
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		td, th 
+		{
+		  	text-align: center;
+		  	padding: 8px;
+		  	text-decoration: bold;
+		}
+
+		tr:nth-child(even) 
+		{
+		  	background-color: #dddddd;
+		  	background-opacity; 0.75;
+		}
+
+/* ********************************************* footer items *********************************** */
+#events_footer
+	{
+		position: absolute;
+		top: 1729px;
+	}
+
+#events_small
+	{
+		position: absolute; 
+		left: 600px; 
+		width: auto; 
+		top: 1790px;
+	}
+
+/* ***************************************************************************************************************************************
+
+                                                          ABOUT PAGE 
+
+**************************************************************************************************************************************** */
+
+
+/* ********************************************* footer items *********************************** */
+#about_footer
+	{
+		position: absolute;
+		top: 1729px;
+	}
+
+#about_small
+	{
+		position: absolute; 
+		left: 600px; 
+		width: auto; 
+		top: 1790px;
+	}
+
+/* ****************************************** about center grid ********************************* */
+
+.about_grid_container 
+    {
+      position: absolute;
+      top: 1175px;
+      width: 1100px;
+      margin-left: 124.5px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas: 
+      "video video main main" 
+      "video video main main" 
+      "video video main main" 
+      "video video main main" 
+      "foot foot foot foot" 
+      "foot foot foot foot";
+      text-align: justify;
+    }
+
+    .video { grid-area: video; }
+
+    .main { grid-area: main; }
+
+    .foot { grid-area: foot; }
+
+    /* ***************************************************************************************************************************************
+
+                                                          CONTACT PAGE 
+
+**************************************************************************************************************************************** */
+
+/* **************************************************** contact footer ***************************************************** */
+
+#contact_footer
+{
+	top: 1800px;
+}
+
+#contact_small
+	{
+		position: absolute; 
+		left: 600px; 
+		width: auto; 
+		top: 1870px;
+	}
+
+	.button 
+	{
+		position: relative;
+		left: 11%;
+	    border: 2px solid #3498db;
+	    width: 90px;
+	    height: 90px;
+	    background: #dae1e3;
+	    border-radius: 30%;
+	    box-shadow: 0 5px 15px -5px #00000070;
+	    color: #3498db;
+	}
+
+	.button:hover
+	{
+        box-shadow: 0 0 15px #000;
+	}
+		.grid-container 
+	{
+		position: absolute;
+		top: 1040px;
+		width: 100%;
+		height: 800px;
+  		display: grid;
+  		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  		grid-template-areas: 
+		". . . . . . . . . . ." 
+		". . taylor_I taylor_I taylor_I . taylor_II taylor_II taylor_II . ."
+		". . taylor_I taylor_I taylor_I . taylor_II taylor_II taylor_II . ." 
+		". . taylor_I taylor_I taylor_I . taylor_II taylor_II taylor_II . ." 
+		". . taylor_I taylor_I taylor_I . taylor_II taylor_II taylor_II . ." 
+		". . . . . . . . . . ." 
+		". . . facebook . youtube . email . . ." 
+		". . . . . . . . . . .";
+	}
+
+.facebook 
+{ 
+	grid-area: facebook; 
+}
+
+.youtube 
+{ 
+	grid-area: youtube; 
+}
+
+.email 
+{ 
+	grid-area: email;
+}
+
+.taylor_I 
+{ 
+	grid-area: taylor_I; 
+	text-align: center;
+}
+
+.taylor_II 
+{ 
+	grid-area: taylor_II; 
+	text-align: center;
+}
+
+#button_decorator_I
+{
+	position: relative; 
+	top: 15px; 
+	left: 17px; 
+	font-size: 350%
+}
+
+#button_decorator_II
+{
+	position: relative; 
+	top: 15px; 
+	left: 13px; 
+	font-size: 350%
+}
+
+#button_decorator_III
+{
+	position: relative; 
+	top: 15px; 
+	left: 17px; 
+	font-size: 350%
+}
+
+

@@ -1,0 +1,673 @@
+/* ***************************************************************************************************************************************
+
+                                                          ATTRACTIONS PAGE 
+
+**************************************************************************************************************************************** */
+
+/* *************************************************** attractions grid **************************************************** */	
+	#attractions_grid
+	{	
+		z-index: 8;
+		position: absolute;
+		top: 1045px;
+		left: 83px;
+		height: 1000px;
+		width: 1200px;
+		display: grid;
+  		grid-template-columns: 1fr 1fr 1fr 1fr;
+  		grid-template-rows: 1fr 1fr 1fr;
+  		grid-template-areas: 
+  		"attractions_img_I attractions_img_II attractions_img_III attractions_img_IV" 
+  		"attractions_img_V attractions_img_VI attractions_img_VII attractions_img_VIII" 
+  		"attractions_img_IX attractions_img_X attractions_img_XI attractions_img_XII";
+  		grid-column-gap: 20px;
+		grid-row-gap: 55px; 
+	}
+
+	#attractions_grid a
+	{
+		text-decoration: none;
+	}
+
+	#attractions_grid h2
+	{
+		color: white;
+	}
+	/*
+	.ride_img_ *
+	{
+		border: 1px solid red;
+		border-radius: 10px;
+	}
+	*/
+	.attractions_img 
+	{ 
+		border: 1px solid red;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 294.656px;
+		width: 283px;
+		border-radius: 15px;
+	}
+
+	#attractions_img_I 
+	{ 
+		grid-area: attractions_img_I;
+		background-image: url("images/rides_tester/booster.jpg");
+	}
+
+	#attractions_img_II 
+	{ 
+		grid-area: attractions_img_II;
+		background-image: url("images/rides_tester/booster.jpg");
+
+	}
+
+	#attractions_img_III 
+	{ 
+		grid-area: attractions_img_III;
+		background-image: url("images/rides_tester/booster.jpg");
+	}
+
+	#attractions_img_IV 
+	{ 
+		grid-area: attractions_img_IV;
+	}
+
+	#attractions_img_V 
+	{
+		grid-area: attractions_img_V;
+	}
+
+	#attractions_img_VI 
+	{ 
+		grid-area: attractions_img_VI;
+	}
+
+	#attractions_img_VII 
+	{ 
+		grid-area: attractions_img_VII;
+	}
+
+	#attractions_img_VIII 
+	{ 
+		grid-area: attractions_img_VIII;
+	}
+
+	#attractions_img_IX 
+	{ 
+		grid-area: attractions_img_IX;
+	}
+
+	#attractions_img_X 
+	{ 
+		grid-area: attractions_img_X;
+	}
+
+	#attractions_img_XI 
+	{ 
+		grid-area: attractions_img_XI;
+	}
+
+	#attractions_img_XII 
+	{ 
+		grid-area: attractions_img_XII;
+	}
+
+	#attractions_grid h3
+	{	
+		position: relative;
+		top: 310px;
+		text-align: center;
+	}
+
+/* ************************************************ modal view ************************************************** */
+
+		#modal_window_I 
+		{
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: rgba(0, 0, 0, 0.7);
+			z-index: 9;
+			opacity: 0;
+			transition: opacity 200ms linear;
+			pointer-events: none;
+		}
+		#modal_window_I:target {
+			opacity:1;
+			pointer-events: auto;
+		}
+		#modal_window_I > div {
+			width: 700px;
+			height: 500px;
+			position: relative;
+			top: 10%;
+			left: 25%;
+			border: solid;
+			border-color: red;
+			border-width : 2px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			border-radius: 15px;
+			background-image: url("images/rides_tester/booster.jpg");
+		}
+		
+		#modal_window_I h2
+		{
+			position: relative;
+			top: 480px;
+			text-align: center;
+		}
+
+		#modal_window_II 
+		{
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: rgba(0, 0, 0, 0.7);
+			z-index: 9;
+			opacity:0;
+			transition: opacity 200ms linear;
+			pointer-events: none;
+		}
+		#modal_window_II:target {
+			opacity:1;
+			pointer-events: auto;
+		}
+		#modal_window_II > div {
+			width: 700px;
+			height: 500px;
+			position: relative;
+			top: 10%;
+			left: 25%;
+			border: solid;
+			border-color: red;
+			border-width : 2px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			border-radius: 15px;
+			background-image: url("images/rides_tester/chair_o_planes.jpg");
+
+
+		}
+		
+		#modal_window_II h2
+		{
+			position: relative;
+			top: 480px;
+			text-align: center;
+		}
+
+		#modal_window_III 
+		{
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: rgba(0, 0, 0, 0.7);
+			z-index: 9;
+			opacity:0;
+			transition: opacity 200ms linear;
+			pointer-events: none;
+		}
+		#modal_window_III:target {
+			opacity:1;
+			pointer-events: auto;
+		}
+		#modal_window_III > div {
+			width: 700px;
+			height: 500px;
+			position: relative;
+			top: 10%;
+			left: 25%;
+			border: solid;
+			border-color: red;
+			border-width : 2px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			border-radius: 15px;
+			background-image: url("images/rides_tester/chair_o_planes.jpg");
+
+
+		}
+		
+		#modal_window_III h2
+		{
+			position: relative;
+			top: 480px;
+			text-align: center;
+		}
+
+		#modal_window_IV 
+		{
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: rgba(0, 0, 0, 0.7);
+			z-index: 9;
+			opacity:0;
+			transition: opacity 200ms linear;
+			pointer-events: none;
+		}
+		#modal_window_IV:target {
+			opacity:1;
+			pointer-events: auto;
+		}
+		#modal_window_IV > div {
+			width: 700px;
+			height: 500px;
+			position: relative;
+			top: 10%;
+			left: 25%;
+			border: solid;
+			border-color: red;
+			border-width : 2px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			border-radius: 15px;
+			background-image: url("images/rides_tester/booster.jpg");
+
+
+		}
+		
+		#modal_window_IV h2
+		{
+			position: relative;
+			top: 480px;
+			text-align: center;
+		}
+				
+		#modal_window_V 
+		{
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: rgba(0, 0, 0, 0.7);
+			z-index: 9;
+			opacity:0;
+			transition: opacity 200ms linear;
+			pointer-events: none;
+		}
+		#modal_window_V:target {
+			opacity:1;
+			pointer-events: auto;
+		}
+		#modal_window_V > div {
+			width: 700px;
+			height: 500px;
+			position: relative;
+			top: 10%;
+			left: 25%;
+			border: solid;
+			border-color: red;
+			border-width : 2px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			border-radius: 15px;
+			background-image: url("images/rides_tester/booster.jpg");
+
+
+		}
+		
+		#modal_window_V h2
+		{
+			position: relative;
+			top: 480px;
+			text-align: center;
+		}
+				
+		#modal_window_VI 
+		{
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: rgba(0, 0, 0, 0.7);
+			z-index: 9;
+			opacity:0;
+			transition: opacity 200ms linear;
+			pointer-events: none;
+		}
+		#modal_window_VI:target {
+			opacity:1;
+			pointer-events: auto;
+		}
+		#modal_window_VI > div {
+			width: 700px;
+			height: 500px;
+			position: relative;
+			top: 10%;
+			left: 25%;
+			border: solid;
+			border-color: red;
+			border-width : 2px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			border-radius: 15px;
+			background-image: url("images/rides_tester/booster.jpg");
+
+
+		}
+		
+		#modal_window_VI h2
+		{
+			position: relative;
+			top: 480px;
+			text-align: center;
+		}
+		#modal_window_VII 
+		{
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: rgba(0, 0, 0, 0.7);
+			z-index: 9;
+			opacity:0;
+			transition: opacity 200ms linear;
+			pointer-events: none;
+		}
+		#modal_window_VII:target {
+			opacity:1;
+			pointer-events: auto;
+		}
+		#modal_window_VII > div {
+			width: 700px;
+			height: 500px;
+			position: relative;
+			top: 10%;
+			left: 25%;
+			border: solid;
+			border-color: red;
+			border-width : 2px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			border-radius: 15px;
+			background-image: url("images/rides_tester/booster.jpg");
+
+
+		}
+		
+		#modal_window_VII h2
+		{
+			position: relative;
+			top: 480px;
+			text-align: center;
+		}
+		
+		#modal_window_VIII 
+		{
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: rgba(0, 0, 0, 0.7);
+			z-index: 9;
+			opacity:0;
+			transition: opacity 200ms linear;
+			pointer-events: none;
+		}
+		#modal_window_VIII:target {
+			opacity:1;
+			pointer-events: auto;
+		}
+		#modal_window_VIII > div {
+			width: 700px;
+			height: 500px;
+			position: relative;
+			top: 10%;
+			left: 25%;
+			border: solid;
+			border-color: red;
+			border-width : 2px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			border-radius: 15px;
+			background-image: url("images/rides_tester/booster.jpg");
+
+
+		}
+		
+		#modal_window_VIII h2
+		{
+			position: relative;
+			top: 480px;
+			text-align: center;
+		}
+				
+		#modal_window_IX 
+		{
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: rgba(0, 0, 0, 0.7);
+			z-index: 9;
+			opacity:0;
+			transition: opacity 200ms linear;
+			pointer-events: none;
+		}
+		#modal_window_IX:target {
+			opacity:1;
+			pointer-events: auto;
+		}
+		#modal_window_IX > div {
+			width: 700px;
+			height: 500px;
+			position: relative;
+			top: 10%;
+			left: 25%;
+			border: solid;
+			border-color: red;
+			border-width : 2px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			border-radius: 15px;
+			background-image: url("images/rides_tester/booster.jpg");
+
+
+		}
+		
+		#modal_window_IX h2
+		{
+			position: relative;
+			top: 480px;
+			text-align: center;
+		}
+		
+		#modal_window_X 
+		{
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: rgba(0, 0, 0, 0.7);
+			z-index: 9;
+			opacity:0;
+			transition: opacity 200ms linear;
+			pointer-events: none;
+		}
+		#modal_window_X:target {
+			opacity:1;
+			pointer-events: auto;
+		}
+		#modal_window_X > div {
+			width: 700px;
+			height: 500px;
+			position: relative;
+			top: 10%;
+			left: 25%;
+			border: solid;
+			border-color: red;
+			border-width : 2px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			border-radius: 15px;
+			background-image: url("images/rides_tester/booster.jpg");
+
+
+		}
+		
+		#modal_window_X h2
+		{
+			position: relative;
+			top: 480px;
+			text-align: center;
+		}
+		
+		#modal_window_XI 
+		{
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: rgba(0, 0, 0, 0.7);
+			z-index: 9;
+			opacity:0;
+			transition: opacity 200ms linear;
+			pointer-events: none;
+		}
+		#modal_window_XI:target {
+			opacity:1;
+			pointer-events: auto;
+		}
+		#modal_window_XI > div {
+			width: 700px;
+			height: 500px;
+			position: relative;
+			top: 10%;
+			left: 25%;
+			border: solid;
+			border-color: red;
+			border-width : 2px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			border-radius: 15px;
+			background-image: url("images/rides_tester/booster.jpg");
+
+
+		}
+		
+		#modal_window_XI h2
+		{
+			position: relative;
+			top: 480px;
+			text-align: center;
+		}
+		
+		#modal_window_XII 
+		{
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: rgba(0, 0, 0, 0.7);
+			z-index: 9;
+			opacity:0;
+			transition: opacity 200ms linear;
+			pointer-events: none;
+		}
+		#modal_window_XII:target {
+			opacity:1;
+			pointer-events: auto;
+		}
+		#modal_window_XII > div {
+			width: 700px;
+			height: 500px;
+			position: relative;
+			top: 10%;
+			left: 25%;
+			border: solid;
+			border-color: red;
+			border-width : 2px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			border-radius: 15px;
+			background-image: url("images/rides_tester/booster.jpg");
+
+
+		}
+		
+		#modal_window_XII h2
+		{
+			position: relative;
+			top: 480px;
+			text-align: center;
+		}
+		
+
+/* ******************************************** attractions modal close button *************************************** */
+		.attractions_modal_close_button
+		{
+			position: relative;
+			bottom: 25px;
+			left: 675px;
+			width: 50px;
+			height: 50px;
+			background-color: lightgrey;
+			border-radius: 50%;
+		}
+
+		.attractions_modal_close_button p
+		{	
+			font-size: 60px;
+			font-family: "Open Sans";
+			position: relative;
+			bottom: 23%;
+			left: 14%;
+			transform: rotate(45deg);
+			z-index: 7;
+		}
+
+		.attractions_modal_close_button:hover p
+		{
+			cursor: pointer;
+			box-shadow: 10px 10px 10px 10px 10px;
+			transform: rotate(45deg) scale(1.15);
+			position: relative;
+			bottom: 23%;
+			left: 15%;
+		}
+
+		#attractions_small
+		{
+			position: absolute;
+			top: 2210px;
+			left: 45%;
+		}
+
+		#attractions_footer
+		{
+			position: absolute; 
+			top: 2150px;
+		}
+
+/* ************** ********************************** footer ********************************************** */
+	/*	#attractions_footer_div
+		{
+			text-align: center;
+			width: 100%;
+			height: 80px;
+			background-color: #0005;
+			line-height: 80px;
+			position: absolute;
+			top: 2150px;
+		}
+*/
